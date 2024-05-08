@@ -9,4 +9,4 @@ COPY . .
 EXPORT 8080
 
 # Command to run your Java application when the container starts
-CMD ["java", "-jar", "Calculator-1.0-SNAPSHOT.jar"]
+CMD ["java", "Main"]
