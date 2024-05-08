@@ -10,4 +10,4 @@ COPY /var/lib/jenkins/workspace/jarfile/target/Calculator-1.0-SNAPSHOT.jar /app/
 EXPORT 8080
 
 # Command to run your Java application when the container starts
-CMD ["java", "-jar", "your-application.jar"]
+CMD ["java", "-jar", "/var/lib/jenkins/workspace/jarfile/target/Calculator-1.0-SNAPSHOT.jar"]
