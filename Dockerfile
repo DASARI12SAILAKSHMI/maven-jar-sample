@@ -5,7 +5,7 @@ FROM openjdk:11-jre-slim
 WORKDIR /app
 
 # Copy the JAR file from your local machine into the container at the specified working directory
-COPY your-application.jar /app/your-application.jar
+COPY /var/lib/jenkins/workspace/jarfile/target/Calculator-1.0-SNAPSHOT.jar.jar /app/var/lib/jenkins/workspace/jarfile/target/Calculator-1.0-SNAPSHOT.jar.jar
 
 # Command to run your Java application when the container starts
 CMD ["java", "-jar", "your-application.jar"]
